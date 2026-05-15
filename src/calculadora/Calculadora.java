@@ -35,6 +35,9 @@ public class Calculadora {
 
     /**
      * Realiza a soma de dois números.
+     * @param a Primeiro valor
+     * @param b Segundo valor
+     * @return Soma de a e b
      */
     private int somar(int a, int b) {
         return a + b;
@@ -42,6 +45,9 @@ public class Calculadora {
 
     /**
      * Realiza a subtração de dois números.
+     * @param a Primeiro valor
+     * @param b Segundo valor
+     * @return Subtração de a e b
      */
     private int subtrair(int a, int b) {
         return a - b;
@@ -49,6 +55,9 @@ public class Calculadora {
 
     /**
      * Realiza a multiplicação de dois números.
+     * @param a Primeiro valor
+     * @param b Segundo valor
+     * @return Produto de a e b
      */
     private int multiplicar(int a, int b) {
         return a * b;
@@ -56,6 +65,9 @@ public class Calculadora {
 
     /**
      * Realiza a divisão de dois números com tratamento para divisão por zero.
+     * @param a Dividendo
+     * @param b Divisor
+     * @return Quociente da divisão ou 0.0 se b for zero
      */
     private double dividir(int a, int b) {
         if (b == 0) {
@@ -67,7 +79,7 @@ public class Calculadora {
 
     /**
      * Exibe mensagens de erro no console.
-     * @param mensagem Texto do erro
+     * @param mensagem Texto do erro a ser exibido
      */
     private void exibirMensagemErro(String mensagem) {
         System.err.println("Erro: " + mensagem);
