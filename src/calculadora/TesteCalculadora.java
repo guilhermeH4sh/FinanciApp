@@ -10,6 +10,11 @@ package calculadora;
 public class TesteCalculadora {
 
     /**
+     * Construtor padrão da classe TesteCalculadora.
+     */
+    public TesteCalculadora() {}
+
+    /**
      * Ponto de entrada dos testes.
      * @param args argumentos de linha de comando
      */

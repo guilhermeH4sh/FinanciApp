@@ -10,6 +10,11 @@ package calculadora;
 public class Calculadora {
 
     /**
+     * Construtor padrão da classe Calculadora.
+     */
+    public Calculadora() {}
+
+    /**
      * Atributo que armazena a versão atual do sistema de cálculos.
      */
     public static final String VERSAO = "1.2";
