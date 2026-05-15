@@ -5,9 +5,14 @@ package calculadora;
  * Parte do módulo de cálculos do aplicativo FinançApp.
  * 
  * @author Antigravity
- * @version 1.1
+ * @version 1.2
  */
 public class Calculadora {
+
+    /**
+     * Atributo que armazena a versão atual do sistema de cálculos.
+     */
+    public static final String VERSAO = "1.2";
 
     /**
      * Realiza uma operação matemática entre dois números inteiros.
@@ -16,8 +21,10 @@ public class Calculadora {
      * @param b  Segundo número (operando B)
      * @param op Operador matemático (+, -, *, /)
      * @return O resultado da operação ou 0.0 em caso de erro
+     * @throws IllegalArgumentException Caso a operação seja inválida ou b seja zero na divisão
      */
     public double calc(int a, int b, String op) {
+        // Estrutura de decisão para selecionar a operação baseada no símbolo
         switch (op) {
             case "+":
                 return somar(a, b);
@@ -68,8 +75,10 @@ public class Calculadora {
      * @param a Dividendo
      * @param b Divisor
      * @return Quociente da divisão ou 0.0 se b for zero
+     * @throws ArithmeticException Caso ocorra tentativa de divisão por zero
      */
     private double dividir(int a, int b) {
+        // Validação obrigatória para impedir falha crítica no sistema
         if (b == 0) {
             exibirMensagemErro("Divisão por zero não permitida.");
             return 0;
@@ -78,7 +87,7 @@ public class Calculadora {
     }
 
     /**
-     * Exibe mensagens de erro no console.
+     * Exibe mensagens de erro no console para o usuário.
      * @param mensagem Texto do erro a ser exibido
      */
     private void exibirMensagemErro(String mensagem) {
@@ -86,11 +95,13 @@ public class Calculadora {
     }
 
     /**
-     * Método principal para demonstração rápida.
+     * Método principal para demonstração rápida do funcionamento da classe.
+     * @param args Argumentos de linha de comando
      */
     public static void main(String[] args) {
         Calculadora calculadora = new Calculadora();
-        double resultado = calculadora.calc(20, 4, "/");
+        System.out.println("Versão do Sistema: " + VERSAO);
+        double resultado = calculadora.calc(10, 2, "/");
         System.out.println("Resultado da demonstração: " + resultado);
     }
 }
