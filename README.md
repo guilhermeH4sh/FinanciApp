@@ -47,6 +47,8 @@ Entrada: 10 ? 5 | Esperado: 0.0  | Obtido: 0.0  | Status: [SUCESSO]
 ## Documentação JavaDoc
 A documentação técnica foi gerada utilizando o padrão JavaDoc. Você pode encontrá-la na pasta `/docs/index.html`.
 
+![Snapshot da Documentação](./docs/screenshots/javadoc.png)
+
 ### Parâmetros da Classe Calculadora:
 - `@author`: Antigravity
 - `@version`: 1.1
