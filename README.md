@@ -31,7 +31,7 @@ java -cp src calculadora.TesteCalculadora
 ```
 
 ### Resultados Obtidos:
-![Snapshot dos Testes](./docs/screenshots/testes.png)
+![Snapshot dos Testes](./screenshots/testes.png)
 
 ```text
 === INICIANDO TESTES DA CALCULADORA ===
@@ -41,7 +41,7 @@ java -cp src calculadora.TesteCalculadora
 ## Documentação JavaDoc
 A documentação técnica foi gerada utilizando o padrão JavaDoc. Você pode encontrá-la na pasta `/docs/index.html`.
 
-![Snapshot da Documentação](./docs/screenshots/javadoc.png)
+![Snapshot da Documentação](./screenshots/javadoc.png)
 
 ### Parâmetros da Classe Calculadora:
 - `@author`: Antigravity
