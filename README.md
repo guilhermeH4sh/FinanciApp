@@ -31,17 +31,11 @@ java -cp src calculadora.TesteCalculadora
 ```
 
 ### Resultados Obtidos:
+![Snapshot dos Testes](./docs/screenshots/testes.png)
+
 ```text
 === INICIANDO TESTES DA CALCULADORA ===
-Entrada: 10 + 5 | Esperado: 15.0 | Obtido: 15.0 | Status: [SUCESSO]
-Entrada: 10 - 5 | Esperado: 5.0  | Obtido: 5.0  | Status: [SUCESSO]
-Entrada: 10 * 5 | Esperado: 50.0 | Obtido: 50.0 | Status: [SUCESSO]
-Entrada: 10 / 2 | Esperado: 5.0  | Obtido: 5.0  | Status: [SUCESSO]
-Erro: Divisão por zero não permitida.
-Entrada: 10 / 0 | Esperado: 0.0  | Obtido: 0.0  | Status: [SUCESSO]
-Erro: Operação inválida: ?
-Entrada: 10 ? 5 | Esperado: 0.0  | Obtido: 0.0  | Status: [SUCESSO]
-=== TESTES FINALIZADOS ===
+...
 ```
 
 ## Documentação JavaDoc
